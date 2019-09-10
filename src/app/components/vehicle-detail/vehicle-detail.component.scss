@@ -1,0 +1,48 @@
+
+.vehicle-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: courier;
+    min-height: 50px;
+    justify-content: space-evenly;
+    word-spacing: 2px;
+   
+    .title {
+      max-width: max-content;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      padding: 2px;
+      // margin: 5px 0px !important;
+      font-size: 1rem;
+      text-transform: uppercase;
+        font-weight: 500 !important;
+    }
+    .price{
+      font-size: .8rem;
+    color: #5d5a5a; 
+    margin: 3px 0px !important;
+  }
+  .description {
+    font-size: .6rem;
+    color: #5d5a5a;
+  }
+    
+  }
+
+
+p{
+    margin:2px 0px !important;
+}
+
+@media screen and (min-width: 300px) and (max-width: 460px) {
+ 
+    .vehicle-detail {
+      align-items: flex-start !important;
+      justify-content: space-between !important;
+      padding-left: 5px;
+      .title{
+          border:none !important;
+      }
+    }
+  }

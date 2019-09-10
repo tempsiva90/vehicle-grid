@@ -1,0 +1,36 @@
+:host {
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row-gap: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 460px) {
+  .grid-item {
+    display: grid;
+    grid-template-areas: "image detail";
+    grid-template-columns: 1fr 3fr;
+  }
+
+  img {
+    grid-area: image;
+    height: 100%;
+  }
+  .detail {
+    grid-area: detail;
+    
+  }
+}
+
+
+
+
+
+
+img {
+    object-fit: scale-down;
+    align-items: center;
+    width: 100%;
+  }

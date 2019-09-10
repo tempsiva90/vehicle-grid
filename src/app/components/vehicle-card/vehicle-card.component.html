@@ -1,0 +1,10 @@
+<div class="grid">
+  <div *ngFor="let vehicle of vehicles" class="grid-item">
+    <!-- 
+        :todo
+        need to get image url structure from API
+        <img [src]="url | imageUrl: vehicle.url:vehicle.media"> -->
+    <img class="image" src="assets/images/fpace_k17.jpg" />
+   <app-vehicle-detail class="detail"></app-vehicle-detail>
+  </div>
+</div>
